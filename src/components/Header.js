@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -56,8 +56,8 @@ const Container = styled.div`
     .nav-menu {
         position: fixed;
         top: 78px;
-        right: -100%;
-        width: 100%;
+        right: -100vw;
+        width: 100vw;
         height: 100vh;
         display: flex;
         background: #FFFFFF;

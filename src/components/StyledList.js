@@ -68,6 +68,6 @@ const BuyButton = styled.button`
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
-    z-index: 1;
     cursor: pointer;
+    z-index:0;
 `;

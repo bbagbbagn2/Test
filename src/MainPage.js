@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Header from './components/Header';
 import MainContainer from './components/Main/MainContainer';
@@ -26,7 +26,7 @@ export default function Main() {
                     </Wrapper>
                 </ContainerTwo>
                 <ContainerThree>
-                    <Wrapper>
+                    <ThreeWrapper>
                         <ItemContainer>
                             {product.map(product => (
                                 <div key={product.id}>
@@ -80,7 +80,7 @@ export default function Main() {
                                 </div>
                             ))}
                         </ItemContainer>
-                    </Wrapper>
+                    </ThreeWrapper>
                 </ContainerThree>
                 <ContainerFour>
                     <Wrapper>
@@ -110,16 +110,24 @@ const Page = styled.div`
 `
 
 const ContainerOne = styled.div`
+    width: 100%;
+    height: 30vw;
     background: #2B2835;
 
     @media (max-width: 768px) {
-        height: 404px;
+        height: 60vw;
     }
 `;
 
 const Wrapper = styled.div`
     padding: 0 6%;
 `;
+const ThreeWrapper = styled(Wrapper)`
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+`;
+
 
 const ContainerTwo = styled.div`
     margin-top: 150px;
@@ -136,9 +144,11 @@ const ContainerThree = styled.div`
 
 const ItemContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(419px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(401px,1fr));
+    column-gap: 15px;
     row-gap: 34px;
     justify-items: center;
+    align-items: center;
 `;
 
 const ListWrapper = styled.div`
@@ -150,6 +160,7 @@ const ListWrapper = styled.div`
     background: #F8F8F9;
     background-blend-mode: normal;
 `;
+
 const ImageWrapper = styled.div`
 
 `;

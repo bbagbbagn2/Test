@@ -17,7 +17,7 @@ export default function Main() {
                     <FindYourCo>Find your Color</FindYourCo>
                     <ColorList>
                         <Oval />
-                        <OvalCopy background='#dd5656' />
+                        <OvalCopy background='#DD5656' />
                         <OvalCopy background='#000000' />
                     </ColorList>
                 </ColorWrapper>
