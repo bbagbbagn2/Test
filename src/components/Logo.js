@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ReactComponent as SvgLogo } from '../img/logo.svg';
+
+import { ReactComponent as SvgLogo } from '../logos/logo.svg';
 
 export default function Logo() {
     return (
-        <Link to="/">
-            <Svg src={SvgLogo} alt="logo" />
-        </Link>
+        <a href="/"><Svg src={SvgLogo} alt="logo" /></a>
     );
 }
 

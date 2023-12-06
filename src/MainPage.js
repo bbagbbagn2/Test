@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import MainContainer from './components/Main/MainContainer';
 import SubContainer from './components/Main/SubContainer';
 import SignUpContainer from './components/Main/SignUpContainer';
 import Footer from './components/Footer';
 import StyledList from './components/StyledList';
 import ToTop from './components/ToTop';
-import product from './db/data.json';
+import product from './data/data.js';
 
 export default function Main() {
 
