@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Logo from '../../components/Logo';
 import FollowLogo from '../../components/FollowLogo';
 
+import CategoryNav from './CategoryNav/CategoryNav';
 import theme from '../theme';
 import NavItem from './NavItem/NavItem';
 
@@ -15,7 +16,7 @@ export default function Footer() {
                 <Logo />
             </LogoWrapper>
             <HelpWrapper>
-                <NavItem title="Products" href="/">HEADPHONES</NavItem>
+                <CategoryNav />
             </HelpWrapper>
             <HelpWrapper>
                 <HelpTitle>Support</HelpTitle>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import theme from '../../theme';
 
-export default function NavItem({ children }) {
+export default function FooterHeader({ children }) {
     return (
             <NavItemHeading>{children}</NavItemHeading>
     );
