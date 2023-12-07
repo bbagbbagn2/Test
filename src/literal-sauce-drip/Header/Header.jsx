@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import Logo from '../../components/Logo';
 
-import CategoryNav from '../CategoryNav/CategoryNav';
-import UserNav from '../UserNav/UserNav';
+import CategoryNav from './CategoryNav/CategoryNav';
+import UserNav from './UserNav/UserNav';
 
 import theme from '../theme';
 
