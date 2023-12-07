@@ -87,11 +87,7 @@ export default function Main() {
                         <SignUpPage />
                     </Wrapper>
                 </ContainerFour>
-                <ContainerFive>
-                    <Wrapper>
-                        <Footer />
-                    </Wrapper>
-                </ContainerFive>
+                <Footer />
             </Page>
             <ToTop />
         </>

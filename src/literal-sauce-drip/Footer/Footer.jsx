@@ -3,22 +3,19 @@ import styled from 'styled-components';
 import Logo from '../../components/Logo';
 import FollowLogo from '../../components/FollowLogo';
 
-export default function Main() {
+import theme from '../theme';
+import NavItem from './NavItem/NavItem';
+
+export default function Footer() {
 
     return (
-        <HelpContainer>
+        <FooterSection>
+        <FooterBox>
             <LogoWrapper>
                 <Logo />
             </LogoWrapper>
             <HelpWrapper>
-                <HelpTitle>Products</HelpTitle>
-                <HelpList>HEADPHONES</HelpList>
-                <HelpList>EARPHONES</HelpList>
-                <HelpList>SPEAKERS</HelpList>
-                <HelpList>ACCESSORIES</HelpList>
-                <HelpList>COLLABORATIONS</HelpList>
-                <HelpList>BEATSAUDIO</HelpList>
-                <HelpList>SPECIAL OFFERS</HelpList>
+                <NavItem title="Products" href="/">HEADPHONES</NavItem>
             </HelpWrapper>
             <HelpWrapper>
                 <HelpTitle>Support</HelpTitle>
@@ -44,14 +41,25 @@ export default function Main() {
                 <HelpTitle>Follow Us</HelpTitle>
                 <FollowLogo />
             </HelpWrapper>
-        </HelpContainer>
+        </FooterBox>
+        </FooterSection>
     );
 }
-const HelpContainer = styled.div`
+
+const FooterSection = styled.footer`
+    margin-top: 4em;
+    padding: 0 8.5%;
+    width: 100%;
+    height: 21.5em;
+    display: grid;
+    align-items: center;
+    background-color: #2b2835;
+`;
+const FooterBox = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: start;
-    justify-items: center;
+    justify-content: center;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -65,7 +73,6 @@ const HelpWrapper = styled.div`
 `;
 
 const LogoWrapper = styled(HelpWrapper)`
-    place-items: center;
 `;
 const HelpTitle = styled.p`
     margin: 2px;
