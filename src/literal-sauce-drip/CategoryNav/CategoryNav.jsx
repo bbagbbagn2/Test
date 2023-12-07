@@ -18,7 +18,20 @@ const CategoryNavList = styled.ul`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-family: Montserrat-medium;
+	line-height: 1.125rem;
 
 	li {
+		&:not(:last-of-type) {
+			margin-right: 11.98vw;
+
+			@media screen and (min-width: 911px) and (max-width: 1260px){
+				margin-right: 6vw;
+			}
+		}
+	}
+
+	@media screen  and (max-width: 910px) {
+		display: none;
 	}
 `;

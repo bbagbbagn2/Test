@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from './Logo';
-import FollowLogo from './FollowLogo';
+import Logo from '../../components/Logo';
+import FollowLogo from '../../components/FollowLogo';
 
 export default function Main() {
 

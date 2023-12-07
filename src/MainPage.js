@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './components/Header/Header';
-import MainContainer from './components/Main/MainContainer';
-import SubContainer from './components/Main/SubContainer';
-import SignUpContainer from './components/Main/SignUpContainer';
-import Footer from './components/Footer';
+import Header from './literal-sauce-drip/Header/Header';
+import FirstSection from './pages/FirstPage/First.js';
+import SecondSection from './pages/SecondPage/Second.js';
+import SignUpPage from './pages/SignUpPage/SignUpPage.js';
+import Footer from './literal-sauce-drip/Footer/Footer';
 import StyledList from './components/StyledList';
 import ToTop from './components/ToTop';
 import product from './data/data.js';
@@ -17,12 +17,12 @@ export default function Main() {
             <Page>
                 <ContainerOne>
                     <Wrapper>
-                        <MainContainer />
+                        <FirstSection />
                     </Wrapper>
                 </ContainerOne>
                 <ContainerTwo>
                     <Wrapper>
-                        <SubContainer />
+                        <SecondSection />
                     </Wrapper>
                 </ContainerTwo>
                 <ContainerThree>
@@ -84,7 +84,7 @@ export default function Main() {
                 </ContainerThree>
                 <ContainerFour>
                     <Wrapper>
-                        <SignUpContainer />
+                        <SignUpPage />
                     </Wrapper>
                 </ContainerFour>
                 <ContainerFive>
@@ -111,7 +111,7 @@ const Page = styled.div`
 
 const ContainerOne = styled.div`
     width: 100%;
-    height: 30vw;
+    height: 38em;
     background: #2B2835;
 
     @media (max-width: 768px) {
