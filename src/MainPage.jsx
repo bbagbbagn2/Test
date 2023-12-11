@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from './literal-sauce-drip/Header/Header';
-import FirstSection from './pages/FirstPage/First.js';
-import SecondSection from './pages/SecondPage/Second.js';
+import Header from './literal-sauce-drip/Header/Header.jsx';
+import FirstSection from './pages/FirstPage/First.jsx';
+import SecondSection from './pages/SecondPage/Second.jsx';
 import ItemListSection from './pages/ItemSection/ItemSection.jsx';
-import SignUpPage from './pages/SignUpPage/SignUpPage.js';
-import Footer from './literal-sauce-drip/Footer/Footer';
+import SignUpPage from './pages/SignUpPage/SignUpPage.jsx';
+import Footer from './literal-sauce-drip/Footer/Footer.jsx';
 
-import ToTop from './components/ToTop';
+import ToTop from './components/ToTop.js';
 
 export default function Main() {
 
@@ -24,8 +24,8 @@ export default function Main() {
                 <SecondSection />
                 <ItemListSection />
                 <SignUpPage />
-                <Footer />
             </Page>
+            <Footer />
             <ToTop />
         </>
     );
