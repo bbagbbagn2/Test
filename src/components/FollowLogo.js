@@ -5,18 +5,18 @@ import { FaFacebookF } from 'react-icons/fa';
 import { BsTwitter } from 'react-icons/bs';
 import { BsTelephoneFill } from 'react-icons/bs';
 
-export default function Logo() {
+export default function FollowLogo() {
     return (
-        <Container>
+        <FollowList>
                 <Background><BsInstagram /></Background>
                 <Background><FaFacebookF /></Background>
                 <Background><BsTwitter /></Background>
                 <Background><BsTelephoneFill /></Background>
-        </Container>
+        </FollowList>
     );
 }
 
-const Container = styled.div`
+const FollowList = styled.div`
     margin-top: 33px;
     width: 165px;
     display: grid;
