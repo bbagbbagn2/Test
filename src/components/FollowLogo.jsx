@@ -1,22 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { BsTwitter } from 'react-icons/bs';
 import { BsTelephoneFill } from 'react-icons/bs';
 
+const social = [
+    <BsInstagram />,
+    <FaFacebookF />,
+    <BsTwitter />,
+    <BsTelephoneFill />,
+];
+
 export default function FollowLogo() {
     return (
         <FollowList>
-                <Background><BsInstagram /></Background>
-                <Background><FaFacebookF /></Background>
-                <Background><BsTwitter /></Background>
-                <Background><BsTelephoneFill /></Background>
+            {social.map((icon, index) => (
+                <Background key={index}>{icon}</Background>
+            ))}
         </FollowList>
     );
 }
 
-const FollowList = styled.div`
+const FollowList = styled.ul`
     margin-top: 33px;
     width: 165px;
     display: grid;
