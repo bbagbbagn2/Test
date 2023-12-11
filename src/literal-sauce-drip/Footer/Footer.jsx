@@ -49,7 +49,7 @@ export default function Footer() {
 
 const FooterSection = styled.footer`
     margin-top: 4em;
-    padding: 0 8.5%;
+    padding: 0 9.375%;
     width: 100%;
     height: 21.5em;
     display: grid;

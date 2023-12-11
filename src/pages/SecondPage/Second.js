@@ -10,35 +10,47 @@ export default function SecondSection() {
     const isSmallScreen = screenWidth <= 768;
 
     return (
-        <section>
-            <div>
-                <Paragraph>Portable Wireless Speaker</Paragraph>
-                <Heading>Beats Pill</Heading>
-                <Paragraph
-                marginTop='0.5em'
-                fontSize='2.5em'
-                lineHeight='3.4375rem'
-                >
-                    Available Colors
-                </Paragraph>
-                <FindColorBox>
-                    <Paragraph>Find your Color</Paragraph>
-                    <ColorList>
-                        <Oval backGround='#fff'/>
-                        <Oval backGround='#dd5656' />
-                        <Oval backGround='#000' />
-                    </ColorList>
-                </FindColorBox>
-                <BuyButtonbox>
-                    <Paragraph fontSize='2.5rem'>$299.95</Paragraph>
-                    <BuyButton background={theme.colors.black} color={theme.colors.white} />
-                </BuyButtonbox>
-                <AppleMusic>$60 Apple Music gift card with purchase of select Beats products.*</AppleMusic>
-            </div>
-        </section>
+        <SeccodPageSetion>
+            <ContentBox>
+                <div>
+                    <Paragraph>Portable Wireless Speaker</Paragraph>
+                    <Heading>Beats Pill</Heading>
+                    <Paragraph
+                        marginTop='0.5em'
+                        fontSize='2.5em'
+                        lineHeight='3.4375rem'
+                    >
+                        Available Colors
+                    </Paragraph>
+                    <FindColorBox>
+                        <Paragraph>Find your Color</Paragraph>
+                        <ColorList>
+                            <Oval backGround='#fff' />
+                            <Oval backGround='#dd5656' />
+                            <Oval backGround='#000' />
+                        </ColorList>
+                    </FindColorBox>
+                    <BuyButtonbox>
+                        <Paragraph fontSize='2.5rem'>$299.95</Paragraph>
+                        <BuyButton background={theme.colors.black} color={theme.colors.white} />
+                    </BuyButtonbox>
+                    <AppleMusic>$60 Apple Music gift card with purchase of select Beats products.*</AppleMusic>
+                </div>
+                <Image src='/images/pill_desktop.png' alt='Beats Pill' />
+            </ContentBox>
+        </SeccodPageSetion>
     );
 }
 
+const SeccodPageSetion = styled.section`
+    margin-top: 14.625em;
+    padding: 0 6.459%;
+`;
+
+const ContentBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
 const Paragraph = styled.p`
     font-family: Montserrat-regular;
 
@@ -92,22 +104,14 @@ const AppleMusic = styled.p`
     margin-top: 12px;
     font-family: Montserrat-regular;
     font-weight: 500;
-    font-size: 0.92857rem;
+    font-size: 0.8125rem;
     line-height: 19.62px;
 
     color: ${theme.colors.black};
 `;
 
-const SpeakerImageBox = styled.div`
-    width: 100%;
-    display: grid;
-    justify-content: end;
-
-    @media (max-width: 768px) {
-        justify-content: center;
-    }   
-`;
-
 const Image = styled.img`
-    width: 100%;
+    position: relative;
+    top: -11.6875em;
+    right: -2.5625em;
 `;

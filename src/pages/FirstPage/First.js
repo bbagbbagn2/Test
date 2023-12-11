@@ -7,6 +7,7 @@ import theme from '../../literal-sauce-drip/theme';
 export default function First() {
     return (
         <Section>
+            <InnerContent>
             <PriceWrapper>
                 <BeatsStudi>Beats Studio3 Wireless</BeatsStudi>
                 <Experience>Experience your<br />music like never before.</Experience>
@@ -16,6 +17,7 @@ export default function First() {
                 </BuyContainer>
                 <AppleMusic>$60 Apple Music gift card with purchase of select Beats products.*</AppleMusic>
             </PriceWrapper>
+            </InnerContent>
         </Section>
     );
 }
@@ -23,7 +25,7 @@ export default function First() {
 const Section = styled.section`
     margin-top: ${theme.header.height};
     width: 100%;
-    height: calc(616px - ${theme.header.height});
+    height: calc(608px - ${theme.header.height});
     display: flex;
     align-items: center;
 
@@ -35,19 +37,20 @@ const Section = styled.section`
     }
 `;
 
-const HeadphoneWrapper = styled.div`
-    position: relative;
-    width: 100%;
+const InnerContent = styled.div`
+    display: flex;
 `;
 
 const Image = styled.img`
-    position: absolute;
-    top: 0;
+    position: relative;
+    left: -12em;
 `
 
 
 const PriceWrapper = styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
     color: ${theme.colors.white};
 `;
 

@@ -18,7 +18,7 @@ export const theme = {
     colors,
     breakpoints,
     header: {
-        padding: '6.4em',
+        padding: '6.459%',
         height: '5.2em',
     },
 };
