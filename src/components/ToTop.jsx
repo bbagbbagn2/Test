@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+
 import { FaArrowUp } from "react-icons/fa";
 
-export default function App() {
-
+export default function ToTopButton() {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const updateScroll = () => {
@@ -25,23 +25,32 @@ export default function App() {
     return (
         scrollPosition > 500 && (
             <TopButton onClick={scrollTop}>
-                <FaArrowUp size="26" color="#FFFFFF" />
+                <FaArrowUp size="26" color="#fff" />
             </TopButton>
         )
     );
 }
 
 const TopButton = styled.button`
+    /* Positioning */
+    padding: 0.5rem;
     position: fixed;    
     bottom: 1.5rem;
     right: 1.5rem;
-    padding: 0.5rem;
+
+    /* Layout */
     display: flex;
+
+    /* Styling */
     background: #FFC700;
     border: 1.5px solid white;
     border-radius: 50%;
-    font-size: 2rem;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    font-size: 2rem;
+
+    /* Cursor Handling */
     cursor: pointer;
-    z-index: 9999;
+
+    /* Z-index */
+    z-index: 1000;
 `;
