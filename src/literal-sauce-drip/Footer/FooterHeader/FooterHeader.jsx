@@ -11,7 +11,7 @@ export default function FooterHeader({ children }) {
 
 const NavItemHeading = styled.h1`
     font-size: 1.5rem;
-    font-family: Montserrat-regular;
+    font-family: Montserrat-Medium;
     font-weight: 600;
     line-height: 1.9375rem;
 
