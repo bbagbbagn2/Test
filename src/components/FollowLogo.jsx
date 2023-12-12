@@ -15,14 +15,24 @@ const social = [
 
 export default function FollowLogo() {
     return (
-        <FollowList>
-            {social.map((icon, index) => (
-                <Background key={index}>{icon}</Background>
-            ))}
-        </FollowList>
+        <div>
+            <Heading>Follow Us</Heading>
+            <FollowList>
+
+                {social.map((icon, index) => (
+                    <Background key={index}>{icon}</Background>
+                ))}
+            </FollowList>
+        </div>
     );
 }
-
+const Heading = styled.h1`
+    color: #fff;
+    font-size: 24px;
+    font-family: Montserrat-medium;
+    font-weight: 600;
+    line-height: 31px;
+`;
 const FollowList = styled.ul`
     margin-top: 33px;
     width: 165px;

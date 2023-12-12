@@ -12,36 +12,13 @@ export default function Footer() {
     return (
         <FooterSection>
         <FooterBox>
-            <LogoWrapper>
+            <LogoBox>
                 <Logo />
-            </LogoWrapper>
-            <HelpWrapper>
+            </LogoBox>
+            <HelpList>
                 <CategoryNav />
-            </HelpWrapper>
-            <HelpWrapper>
-                <HelpTitle>Support</HelpTitle>
-                <CompanyList>PRODUCT HELP</CompanyList>
-                <CompanyList>SERVICE & WARRANTY</CompanyList>
-                <CompanyList>REGISTER YOUR BEATS</CompanyList>
-                <CompanyList>UPDATE YOUR BEATS</CompanyList>
-                <CompanyList>AUTHORIZED SERVICE PROVIDERS</CompanyList>
-                <CompanyList>CONTACT SUPPORT</CompanyList>
-                <CompanyList>INTERNATIONAL NUMBERS</CompanyList>
-            </HelpWrapper>
-            <HelpWrapper>
-                <HelpTitle>Company</HelpTitle>
-                <CompanyList>PRODUCT HELP</CompanyList>
-                <CompanyList>NEWS AND EVENTS</CompanyList>
-                <CompanyList>PROMOTION TERMS</CompanyList>
-                <CompanyList>PRIVACY POLICY</CompanyList>
-                <CompanyList>TRADEMARK</CompanyList>
-                <CompanyList>TERMS OF USE</CompanyList>
-                <CompanyList>COOKIES</CompanyList>
-            </HelpWrapper>
-            <HelpWrapper>
-                <HelpTitle>Follow Us</HelpTitle>
-                <FollowLogo />
-            </HelpWrapper>
+            </HelpList>
+            <FollowLogo />
         </FooterBox>
         </FooterSection>
     );
@@ -56,11 +33,11 @@ const FooterSection = styled.footer`
     align-items: center;
     background-color: #2b2835;
 `;
+
 const FooterBox = styled.div`
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: space-between;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -68,13 +45,9 @@ const FooterBox = styled.div`
     }
 `;
 
-const HelpWrapper = styled.div`
-    width: 100%;
-    display: grid;
+const LogoBox = styled.div`
 `;
 
-const LogoWrapper = styled(HelpWrapper)`
-`;
 const HelpTitle = styled.p`
     margin: 2px;
     color: #FFFFFF;
@@ -88,18 +61,9 @@ const HelpTitle = styled.p`
         margin-bottom: 20px;
     }
 `;
-const HelpList = styled.p`
-    margin: 2px;
-    color: #B8B8B8;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 22px;
-    cursor: pointer;
-
-    @media (max-width: 768px) {
-        margin: 0;
-    }
+const HelpList = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 `;
 
 const CompanyList = styled(HelpList)`

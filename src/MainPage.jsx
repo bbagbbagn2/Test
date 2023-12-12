@@ -8,7 +8,7 @@ import ItemListSection from './pages/ItemSection/ItemSection.jsx';
 import SignUpPage from './pages/SignUpPage/SignUpPage.jsx';
 import Footer from './literal-sauce-drip/Footer/Footer.jsx';
 
-import ToTop from './components/ToTop.js';
+import ToTopButton from './components/ToTop';
 
 export default function Main() {
 
@@ -26,7 +26,7 @@ export default function Main() {
                 <SignUpPage />
             </Page>
             <Footer />
-            <ToTop />
+            <ToTopButton />
         </>
     );
 }
