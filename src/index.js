@@ -6,7 +6,7 @@ import { createGlobalStyle } from 'styled-components';
 import App from './App';
 
 import theme from './literal-sauce-drip/theme';
-import "./fonts/Font.css";
+import "./asset/fonts/Font.css";
 
 const GlobalStyle = createGlobalStyle`
 	*, *::before, *::after {

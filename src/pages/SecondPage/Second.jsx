@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import BuyButton from '../../literal-sauce-drip/BuyButton/BuyButton';
 import theme from '../../literal-sauce-drip/theme';
 
+import BeatsPill from '../../asset/images/pill_desktop.png';
+
 export default function SecondSection() {
 
     const screenWidth = window.innerWidth;
@@ -36,7 +38,7 @@ export default function SecondSection() {
                     </BuyButtonbox>
                     <AppleMusic>$60 Apple Music gift card with purchase of select Beats products.*</AppleMusic>
                 </div>
-                <Image src='/images/pill_desktop.png' alt='Beats Pill' />
+                <Image src={BeatsPill} alt='Beats Pill' />
             </ContentBox>
         </SeccodPageSetion>
     );
@@ -89,6 +91,10 @@ const Oval = styled.div`
     box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.14);
 
     background: ${props => props.backGround};
+
+    &:hover {
+        border: 1px solid #000;
+    }
 `;
 
 const BuyButtonbox = styled.div`
