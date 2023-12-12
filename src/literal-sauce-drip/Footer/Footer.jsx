@@ -4,22 +4,17 @@ import Logo from '../../components/Logo';
 import FollowLogo from '../../components/FollowLogo';
 
 import CategoryNav from './CategoryNav/CategoryNav';
-import theme from '../theme';
-import NavItem from './NavItem/NavItem';
 
 export default function Footer() {
-
     return (
         <FooterSection>
-        <FooterBox>
-            <LogoBox>
+            <FooterBox>
                 <Logo />
-            </LogoBox>
-            <HelpList>
-                <CategoryNav />
-            </HelpList>
-            <FollowLogo />
-        </FooterBox>
+                <HelpList>
+                    <CategoryNav />
+                </HelpList>
+                <FollowLogo />
+            </FooterBox>
         </FooterSection>
     );
 }
@@ -45,29 +40,10 @@ const FooterBox = styled.div`
     }
 `;
 
-const LogoBox = styled.div`
-`;
-
-const HelpTitle = styled.p`
-    margin: 2px;
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 31px;
-
-    @media (max-width: 768px) {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-`;
 const HelpList = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-`;
-
-const CompanyList = styled(HelpList)`
-    @media (max-width: 768px) {
-        display: none;
-    }
+    padding: 0 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
 `;
