@@ -1,10 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import FooterHeader from '../FooterHeader/FooterHeader';
 import NavItem from '../NavItem/NavItem';
-
-import theme from '../../theme';
 
 const categoryData = {
     'Product': [
