@@ -5,7 +5,7 @@ import theme from '../../theme';
 
 export default function FooterHeader({ children }) {
     return (
-            <NavItemHeading>{children}</NavItemHeading>
+        <NavItemHeading>{children}</NavItemHeading>
     );
 };
 
