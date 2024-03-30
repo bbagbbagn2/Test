@@ -1,4 +1,4 @@
-[# beats Main
+# beats Main
 <br><br>
 
 ## 프로젝트 정보
