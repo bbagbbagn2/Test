@@ -2,26 +2,26 @@
 
 ## Beats MainPage 클론 코딩 웹사이트
 
-## 프로젝트 정보
+## Implementation 👩‍💻
 
-### 개발 기간
-<p>
-  2023.06 약 1개월동안 진행<br/><br/>
-</p>
+🌟 styled-components를 이용한 스타일 적용\
+🌟 media-query를 이용한 반응형 제작\
+🌟 React, JavaScript를 이용한 프론트엔드 개발
 
-### 프로젝트 소개
-<p>
-  beats Main은 beats의 이어폰 및 스피커를 소개하는 웹 페이지의 메인 페이지입니다.
-</p>
-    
-## Stacks
+## Getting Start 🚀
 
-### Frontend
-<p>
-<img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
-<img src="https://img.shields.io/badge/styled components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white"/>
-<img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white"/>
-  </p>
-<br><br>
+```bash
+# Clone the repository
+$ git clone https://github.com/bbagbbagn2/JH-Portfolio.git
+
+# Install dependencies
+$ npm install
+
+# Start a local dev server
+$ npm start
+```
+
+## Skills used 🔧
+
+- [React](https://ko.react.dev/) - 컴포넌트 기반의 SPA 구축을 위한 라이브러리
+- [styled-components](https://styled-components.com/) - CSS-in-JS 라이브러리
