@@ -21,6 +21,10 @@ $ npm install
 $ npm start
 ```
 
+<h2 align="center">
+  <img src="https://github.com/user-attachments/assets/d27122ca-e577-4386-b257-88055332bb38" alt="PJH-Portfolio" width="100%">
+</h2>
+
 ## Skills used 🔧
 
 - [React](https://ko.react.dev/) - 컴포넌트 기반의 SPA 구축을 위한 라이브러리
