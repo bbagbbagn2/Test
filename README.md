@@ -1,5 +1,6 @@
-# beats Main
-<br><br>
+# Beats Clone
+
+## Beats MainPage 클론 코딩 웹사이트
 
 ## 프로젝트 정보
 
