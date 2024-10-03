@@ -12,7 +12,7 @@
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/bbagbbagn2/JH-Portfolio.git
+$ git clone https://github.com/bbagbbagn2/beats-Main.git
 
 # Install dependencies
 $ npm install
