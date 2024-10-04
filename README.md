@@ -31,7 +31,7 @@ $ npm start
 
 ---
 
-## Skills used 🔧
+## Technologies used 🔧
 
 - [React](https://ko.react.dev/) - 컴포넌트 기반의 SPA 구축을 위한 라이브러리
 - [styled-components](https://styled-components.com/) - CSS-in-JS 라이브러리
