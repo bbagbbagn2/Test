@@ -3,7 +3,7 @@
 ## Beats MainPage 클론 코딩 웹사이트
 
 <h2 align="center">
-  <img src="https://github.com/user-attachments/assets/d27122ca-e577-4386-b257-88055332bb38" alt="beats" width="600px">
+  <img src="https://github.com/user-attachments/assets/c421ed0a-d9c0-4395-b1ad-b38e220d1375" alt="beats">
 </h2>
 
 ## Implementation 👩‍💻
@@ -11,8 +11,6 @@
 🌟 styled-components를 이용한 스타일 적용\
 🌟 media-query를 이용한 반응형 제작\
 🌟 React, JavaScript를 이용한 프론트엔드 개발
-
----
 
 ## Getting Start 🚀
 
@@ -27,7 +25,9 @@ $ npm install
 $ npm start
 ```
 
-![beats-final](https://github.com/user-attachments/assets/23145d31-6eef-4ca4-bfd5-a1a0d0bd8b0a)
+<h2 align="center">
+  <img src="https://github.com/user-attachments/assets/d27122ca-e577-4386-b257-88055332bb38" alt="beats" width="100%">
+</h2>
 
 ---
 
